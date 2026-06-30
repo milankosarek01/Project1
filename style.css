@@ -185,6 +185,53 @@ section p {
   background: #2563EB;
 }
 
+button.tlacitko {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* KONTAKTNI FORMULAR */
+.kontakt-formular {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin-top: 1.5rem;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+  background: #243d30;
+  border: 1px solid #2d5240;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.kontakt-formular input::placeholder,
+.kontakt-formular textarea::placeholder {
+  color: #6b8a7a;
+}
+
+.kontakt-formular input:focus,
+.kontakt-formular textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+
+.kontakt-formular textarea {
+  resize: vertical;
+}
+
+.kontakt-formular .tlacitko {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
 /* FOOTER */
 footer {
   background: #142e22;

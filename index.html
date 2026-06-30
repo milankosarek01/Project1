@@ -76,8 +76,15 @@
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>Chcete se spojit? Napište mi email.</p>
-    <a href="mailto:milan.kosarek01@gmail.com" class="tlacitko">milan.kosarek01@gmail.com</a>
+    <p>Chcete se spojit? Napište mi přes formulář a já se vám ozvu.</p>
+    <form class="kontakt-formular" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="847cf0aa-b387-4454-a056-979efdd4bf90" />
+      <input type="hidden" name="subject" value="Nová zpráva z osobního webu" />
+      <input type="text" name="name" placeholder="Vaše jméno" required />
+      <input type="email" name="email" placeholder="Váš email" required />
+      <textarea name="message" placeholder="Vaše zpráva" rows="5" required></textarea>
+      <button type="submit" class="tlacitko">Odeslat zprávu</button>
+    </form>
   </section>
 
   <footer>
