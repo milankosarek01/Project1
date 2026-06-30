@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* NAVIGACE */
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav ul a:hover {
+  color: #1a1a1a;
+}
+
+/* HERO */
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 2rem 6rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* SEKCE */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  color: #444;
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+/* KARTY */
+.karty {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.karta {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.8rem;
+}
+
+.ikona {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.karta h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.karta p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* KONTAKT */
+.tlacitko {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.9rem 2rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.tlacitko:hover {
+  background: #333;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+  font-size: 0.85rem;
+}
